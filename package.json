@@ -1,10 +1,23 @@
 {
   "name": "rn-alf",
   "type": "module",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "packageManager": "yarn@4.6.0",
   "author": "Vitaly Statsura",
   "license": "MIT",
+  "homepage": "https://github.com/teivienn/rn-alf",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teivienn/rn-alf"
+  },
+  "keywords": [
+    "application layout framework",
+    "alf",
+    "cli",
+    "react",
+    "react native",
+    "styles"
+  ],
   "exports": "./dist/bin.js",
   "bin": "dist/bin.js",
   "files": [
@@ -21,6 +34,7 @@
     "@antfu/ni": "^25.0.0",
     "chalk": "^5.6.0",
     "cosmiconfig": "^9.0.0",
+    "prettier": "^3.6.2",
     "yargs": "^18.0.0",
     "zod": "^4.0.17"
   },

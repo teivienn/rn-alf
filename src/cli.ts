@@ -6,15 +6,11 @@ import { init } from './init'
 export function cli() {
   const processArgv = hideBin(process.argv)
 
-  if (processArgv.includes('init'))
-    return init()
-
-  if (processArgv.includes('gen'))
-    return gen()
-
   yargs(processArgv)
     .scriptName('rn-alf')
-    .usage('$0 <cmd> [args]')
+    .usage('$0 <cmd>')
+    .command('init', 'Initialize rn-alf.json config file', init)
+    .command('gen', 'Generate alf styles', gen)
     .version()
     .alias('v', 'version')
     .help()
